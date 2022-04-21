@@ -35,7 +35,13 @@ def meshwalker(reset, mesh, f1, f2):
 
     else:
         #use the graph to find the shortest path between two faces
+        # SP = mp.shortestPath(walkerGraph, f1, f2)
         SP = mp.dijkstraPath(walkerGraph, f1, f2)
+        # SP = mp.burnEdgesPath(walkerGraph)
+        # SP = mp.AllShortestPaths(walkerGraph, f1)
+        # SP = mp.minimun_spanning_tree(walkerGraph)
+        # SP = mp.minimun_spanning_edges(walkerGraph, f1)
+
         pts = SP[0]
         faceInd = SP[1]
 
@@ -131,4 +137,4 @@ def mst( mesh, weights):
 
 
 if __name__== "__main__":
-    app.run()
+    app.run(debug=True)

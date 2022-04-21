@@ -31,8 +31,8 @@ def meshToGraph(mesh, plot=False):
     G = mp.SimpleGraphFromMesh(mesh)
     print(G)
     if plot:  
-        du.plotGraph(G)
-        #du.plotGraphSave(G)
+         du.plotGraph(G)
+        # du.plotGraphSave(G)
     
     return str(G)
 

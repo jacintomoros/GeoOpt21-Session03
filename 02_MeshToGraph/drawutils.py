@@ -1,5 +1,5 @@
-import matplotlib.pyplot as plt
 import networkx as nx
+import matplotlib.pyplot as plt
 
 def plotGraph(G, node_size = 10):
     
